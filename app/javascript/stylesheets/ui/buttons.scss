@@ -1,0 +1,51 @@
+.button {
+  @apply outline-none leading-normal whitespace-nowrap inline-block
+  py-2 px-4 text-center align-middle transition-all duration-200 rounded;
+
+  i, svg {
+    @apply mr-2 leading-normal text-sm;
+  }
+}
+
+.button--small {
+  @apply text-sm py-1 px-2;
+}
+
+button[disabled] {
+  @apply bg-gray-200 text-gray-700 border border-gray-400;
+}
+
+.button--primary {
+  @apply bg-primary text-white border border-primary;
+}
+
+.button--primary:hover {
+  @apply bg-blue-600 shadow-none shadow-inner;
+}
+
+.button--secondary {
+  @apply border border-gray-300 bg-white;
+}
+
+.button--secondary:hover {
+  @apply border-primary text-primary;
+}
+
+.button--tertiary {
+  @apply text-gray-700
+  border-none bg-transparent shadow-none;
+}
+
+.button--tertiary:disabled {
+  @apply bg-transparent text-gray-500;
+}
+
+
+.button--tertiary:hover {
+  @apply bg-primary text-white border-transparent shadow-inner;
+}
+
+button:disabled,
+button[disabled]{
+  @apply cursor-not-allowed;
+}

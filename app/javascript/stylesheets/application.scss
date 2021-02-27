@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+body {
+  @apply p-16 bg-gray-100;
+}
+
+.style-guide {
+  @apply max-w-screen-sm mx-auto space-y-16;
+}
+
+.style-guide__section {
+  @apply space-y-8;
+
+  > header {
+    @apply space-y-4;
+
+    > h1 {
+      @apply font-bold;
+    }
+  }
+}
+
+.style-guide__example {
+  @apply bg-white border shadow-sm p-8;
+
+  > header {
+    @apply mb-8
+  }
+}
+
+@import "ui/typography";
+@import "ui/buttons";
