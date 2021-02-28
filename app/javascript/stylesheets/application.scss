@@ -8,6 +8,22 @@ body {
   @apply p-16 bg-gray-100;
 }
 
+.style-guide-sidebar {
+  @apply space-y-8;
+
+  > section {
+    @apply space-y-4;
+  }
+}
+
+.style-guide-container {
+  @apply grid grid-cols-4 gap-4;
+
+  .style-guide {
+    @apply col-span-3;
+  }
+}
+
 .style-guide {
   @apply max-w-screen-sm mx-auto space-y-16;
 }
