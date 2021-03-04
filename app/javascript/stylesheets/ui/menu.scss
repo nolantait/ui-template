@@ -1,0 +1,16 @@
+nav.ui-menu {
+  @apply bg-white border shadow rounded p-2;
+
+  > header {
+  }
+
+  > ul {
+
+    > li {
+    }
+  }
+
+  nav.ui-menu {
+    @apply px-0 border-0 bg-gray-100;
+  }
+}

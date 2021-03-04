@@ -1,0 +1,23 @@
+.ui-breadcrumbs {
+  @apply space-x-1;
+}
+
+.breadcrumb {
+  @apply text-gray-400;
+
+  a {
+    @apply transition-all duration-500;
+  }
+
+  a:hover {
+    @apply text-primary;
+  }
+}
+
+.breadcrumb--current {
+  @apply text-gray-900;
+}
+
+.breadcrumb-delimiter {
+  @apply text-gray-400;
+}
