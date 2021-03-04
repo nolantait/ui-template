@@ -6,6 +6,7 @@
 require("@rails/ujs").start()
 require("turbolinks").start()
 
+import "ui/app/javascript/ui/application"
 import "@fortawesome/fontawesome-free/js/all"
 import '../stylesheets/application.scss'
 
