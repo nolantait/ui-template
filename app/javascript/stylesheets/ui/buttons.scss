@@ -1,4 +1,4 @@
-.button {
+.button:not(.hidden) {
   @apply outline-none leading-normal whitespace-nowrap inline-block
   py-2 px-4 text-center align-middle transition-all duration-200 rounded;
 
