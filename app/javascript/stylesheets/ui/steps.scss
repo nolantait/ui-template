@@ -1,0 +1,84 @@
+.ui-steps {
+  @apply relative overflow-hidden;
+
+  > ul {
+    @apply flex flex-row justify-between items-start space-x-4;
+  }
+}
+
+.ui-step {
+  @apply grid gap-2 relative bg-white px-4;
+  grid-template-columns: 32px auto;
+  grid-template-areas:
+  'icon header'
+  'icon description';
+  z-index: 1;
+
+  .ui-step__description {
+    grid-area: description;
+  }
+
+  .ui-step__icon {
+    grid-area: icon;
+  }
+}
+
+.ui-step__header {
+  @apply flex flex-row justify-start items-end space-x-4 pt-1 bg-white
+  inline-block w-min pr-2;
+  grid-area: header;
+  line-height: 1;
+
+  &:after {
+    content: '';
+    @apply bg-primary absolute;
+    height: 1px;
+    top: 16px;
+    z-index: -1;
+    width: 9999px;
+  }
+}
+
+.ui-step__icon {
+  @apply rounded-full inline-block w-9 h-9 text-center
+  font-bold text-lg align-middle border
+  bg-white border-primary text-primary;
+  line-height: theme('spacing.9');
+  grid-area: icon;
+}
+
+.ui-step__title {
+  @apply text-lg whitespace-nowrap;
+}
+
+.ui-step__subtitle {
+  @apply text-gray-500 whitespace-nowrap;
+}
+
+.ui-step__description {
+  @apply text-gray-500;
+}
+.ui-step--last {
+  > .ui-step__header {
+    &:after {
+      width: 0px;
+      height: 0px;
+    }
+  }
+}
+
+.ui-step--current {
+  .ui-step__icon {
+    @apply bg-primary text-white;
+  }
+}
+
+.ui-step--waiting {
+  > .ui-step__header {
+    @apply text-gray-500;
+  }
+
+  .ui-step__icon {
+    @apply bg-white text-gray-500 border-gray-500;
+  }
+}

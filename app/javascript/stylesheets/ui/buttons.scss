@@ -2,8 +2,12 @@
   @apply outline-none leading-normal whitespace-nowrap inline-block
   py-2 px-4 text-center align-middle transition-all duration-200 rounded;
 
+  > span {
+    @apply space-x-1 inline-block;
+  }
+
   i, svg {
-    @apply mr-2 leading-normal text-sm;
+    @apply leading-normal text-sm mx-auto inline-block;
   }
 }
 
