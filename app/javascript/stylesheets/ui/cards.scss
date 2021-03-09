@@ -1,0 +1,20 @@
+.ui-card {
+  @apply border bg-white shadow;
+}
+
+.ui-card__header {
+  @apply p-6 border-b flex flex-row justify-between items-center text-lg;
+}
+
+.ui-card__content {
+  @apply p-6;
+}
+
+.ui-card__controls {
+  @apply flex flex-row justify-between items-center border-t;
+
+  > * {
+    @apply p-6 w-full text-center text-gray-600;
+    flex: 1;
+  }
+}

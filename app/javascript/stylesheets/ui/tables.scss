@@ -1,0 +1,19 @@
+.ui-table {
+  @apply space-y-4;
+
+  table {
+    @apply table-fixed;
+  }
+
+  th {
+    @apply bg-gray-100 font-semibold text-gray-600 text-left;
+  }
+
+  th, td {
+    @apply p-4;
+  }
+
+  tr {
+    @apply border-b;
+  }
+}
