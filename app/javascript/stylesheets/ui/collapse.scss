@@ -1,0 +1,27 @@
+.ui-collapse {
+  @apply divide-y border;
+}
+
+.ui-collapse-panel {
+  > header {
+    @apply p-4;
+  }
+
+  > div {
+    @apply border-t py-6 px-4;
+  }
+
+  > header {
+    @apply bg-gray-100 flex flex-row justify-start items-center space-x-4;
+
+    svg, i {
+      @apply transition-all duration-200;
+    }
+  }
+}
+
+div.ui-collapsed {
+  svg, i {
+    transform: rotate(-90deg);
+  }
+}
