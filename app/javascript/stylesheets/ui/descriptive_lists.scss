@@ -8,35 +8,39 @@ article.ui-descriptive-list {
 }
 
 .ui-descriptive-list--horizontal {
+  .ui-descriptive-list__items {
+    @apply border-t divide-y;
+  }
+
   .ui-descriptive-list__item {
-    @apply lg:grid-cols-2;
+    @apply py-5 px-4 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6;
 
     dt {
-      @apply md:border-r md:border-b-0 border-b;
+      @apply text-sm font-medium text-gray-500;
+    }
+
+    dd {
+      @apply mt-1 text-sm sm:mt-0 sm:col-span-2;
     }
   }
 }
 
 .ui-descriptive-list--vertical {
+  .ui-descriptive-list__items {
+    @apply sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-4;
+  }
+
   .ui-descriptive-list__item {
+    @apply py-5 px-4;
+
     dt {
-      @apply border-b;
+      @apply text-sm font-medium text-gray-500;
+    }
+
+    dd {
+      @apply mt-1 text-sm sm:mt-0;
     }
   }
 }
 
-.ui-descriptive-list__items {
-  @apply grid lg:grid-cols-3 md:grid-cols-2 gap-0 border-t border-l;
-}
 
-.ui-descriptive-list__item {
-  @apply grid gap-0 border-r border-b;
-
-  dd, dt {
-    @apply p-6;
-  }
-
-  dt {
-    @apply bg-gray-100;
-  }
-}
