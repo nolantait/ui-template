@@ -7,7 +7,8 @@ import {
   Selectable,
   Sortable,
   Collapsable,
-  Tooltip
+  Tooltip,
+  Notification
 } from 'ui-reflex'
 
 const application = Application.start()
@@ -22,3 +23,4 @@ application.register('selectable', Selectable)
 application.register('sortable', Sortable)
 application.register('collapsable', Collapsable)
 application.register('tooltip', Tooltip)
+application.register('notification', Notification)
